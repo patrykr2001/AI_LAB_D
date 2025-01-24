@@ -1,24 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg"/>
+    <link rel="icon" type="icon" href="/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Pogoda</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<header>
-    <h1>Pogoda</h1>
-</header>
-<main>
+<div class="container p-3 border">
+    <header class="text-center">
+        <h1 class="text-uppercase">Pogoda</h1>
+    </header>
+    <main class="mt-5">
+        <section class="text-center">
+            <form>
+                <div class="form-group mb-3">
+                    <label for="cityInput" class="form-label h4 text-uppercase">Wyszukaj miasto</label>
+                    <input type="text" class="form-control" id="cityInput"
+                           placeholder="Szczecin..."
+                           aria-label="Miasto" autocomplete="off">
+                </div>
+                <button type="button" id="searchButton" class="btn btn-lg btn-primary w-25">Szukaj
+                </button>
+            </form>
+        </section>
+        <section class="text-center">
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h2 id="weather-title" class="card-title">Pogoda na dziś</h2>
+                </div>
+                <div id="weather-info" class="card-body">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center mt-5 text-uppercase">Prognoza godzinowa</h2>
+            <div id="forecast-today" class="row justify-content-start">
 
-</main>
-<footer>
-    <p>Created by PR 51626</p>
-</footer>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center mt-5 text-uppercase">Prognoza (5dni)</h2>
+            <div id="forecast-week" class="row justify-content-start">
+
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">
+        <p>Created by PR 51626</p>
+    </footer>
+</div>
 <script type="module" src="/js/main.js"></script>
 </body>
 </html>
