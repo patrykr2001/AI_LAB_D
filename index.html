@@ -14,39 +14,39 @@
         <h1 class="text-uppercase">Pogoda</h1>
     </header>
     <main class="mt-5">
-        <section class="text-center">
-            <form>
-                <div class="form-group mb-3">
-                    <label for="cityInput" class="form-label h4 text-uppercase">Wyszukaj miasto</label>
-                    <input type="text" class="form-control" id="cityInput"
-                           placeholder="Szczecin..."
-                           aria-label="Miasto" autocomplete="off">
+        <article class="text-center">
+            <section>
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="cityInput" class="form-label h4 text-uppercase">Wyszukaj miasto</label>
+                        <input type="text" class="form-control" id="cityInput"
+                               placeholder="Szczecin..."
+                               aria-label="Miasto" autocomplete="off">
+                    </div>
+                    <button type="button" id="searchButton" class="btn btn-lg btn-primary w-25">Szukaj
+                    </button>
+                </form>
+            </section>
+            <section>
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h2 id="weather-title" class="card-title">Pogoda na dziś</h2>
+                    </div>
+                    <div id="weather-info" class="card-body">
+                    </div>
                 </div>
-                <button type="button" id="searchButton" class="btn btn-lg btn-primary w-25">Szukaj
-                </button>
-            </form>
-        </section>
-        <section class="text-center">
-            <div class="card mt-3">
-                <div class="card-header">
-                    <h2 id="weather-title" class="card-title">Pogoda na dziś</h2>
+            </section>
+            <section>
+                <h2 class="text-center mt-5 text-uppercase">Prognoza godzinowa</h2>
+                <div id="forecast-today" class="row justify-content-start">
                 </div>
-                <div id="weather-info" class="card-body">
+            </section>
+            <section>
+                <h2 class="text-center mt-5 text-uppercase">Prognoza (5dni)</h2>
+                <div id="forecast-week" class="row justify-content-start">
                 </div>
-            </div>
-        </section>
-        <section>
-            <h2 class="text-center mt-5 text-uppercase">Prognoza godzinowa</h2>
-            <div id="forecast-today" class="row justify-content-start">
-
-            </div>
-        </section>
-        <section>
-            <h2 class="text-center mt-5 text-uppercase">Prognoza (5dni)</h2>
-            <div id="forecast-week" class="row justify-content-start">
-
-            </div>
-        </section>
+            </section>
+        </article>
     </main>
     <footer class="text-center">
         <p>Created by PR 51626</p>
